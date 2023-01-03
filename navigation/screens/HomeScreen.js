@@ -3,7 +3,6 @@ import { StyleSheet, TextInput, ImageBackground, View, Text, ScrollView, Touchab
 import { useEffect, useState } from 'react'
 import JsonData from '../files.json'
 
-
 const isCloseToBottom = ({ layoutMeasurement, contentOffset, contentSize }) => {
     const paddingToBottom = 1500;
     return layoutMeasurement.height + contentOffset.y >=
