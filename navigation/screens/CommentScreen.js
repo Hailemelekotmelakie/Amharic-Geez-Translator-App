@@ -17,11 +17,11 @@ export default function CommentScreen({ navigation }) {
     const sendData = async () => {
         if (netInfo.isConnected) {
             if (Data[0].Email && Data[0].Comment) {
-                const result = await Axios.post('https://dictionary-a7c40-default-rtdb.firebaseio.com/comments.json', Data)
+                await Axios.post('https://dictionary-a7c40-default-rtdb.firebaseio.com/comments.json', Data)
                     .then(res => {
                         Alert.alert(
                             'በትክክል ተልኳል',
-                            'እናመሰናለን!!!',
+                            'እናመሰግናለን!!!',
                             [
                                 { text: 'እሽ' },
                             ]

@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "pro",
+    "name": "የአማርኛና ግዕዝ መዝገበ ቃላት",
     "slug": "pro",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -25,7 +25,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.hailemelekotmelakie1991.pro"
+      "package": "geez.hailemelekotmelakie1991.Amharic"
     },
     "web": {
       "favicon": "./assets/favicon.png"

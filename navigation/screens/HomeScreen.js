@@ -153,7 +153,7 @@ export default function App() {
             >
 
                 {Loading ? <Text style={styles.LoadingStyle}>Loading ...</Text> :
-                    <>
+                    <View>
                         {filtered.length === 0 ?
                             <View>
                                 <Text style={styles.noData}>
@@ -164,8 +164,8 @@ export default function App() {
                             </View> :
                             filtered.slice(0, counter[0].upto).map((Dic) => {
                                 return (
-                                    <TouchableOpacity>
-                                        <View key={Dic.id} style={styles.oneTranslation} >
+                                    <TouchableOpacity key={Dic.id}>
+                                        <View style={styles.oneTranslation} >
                                             <View style={styles.oneTranslationLeft}>
                                                 <Text style={styles.amharicTranslation}>
                                                     {Dic.amharic}
@@ -181,7 +181,7 @@ export default function App() {
                                     </TouchableOpacity>
                                 )
                             })}
-                    </>
+                    </View>
                 }
             </ScrollView >
             <StatusBar style="light" backgroundColor="tomato" />

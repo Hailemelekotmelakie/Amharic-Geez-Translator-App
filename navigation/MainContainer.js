@@ -35,20 +35,17 @@ function MainContainer() {
               iconName = focused ? 'add-circle' : 'add-circle-outline';
 
             } else if (rn === LogoutName) {
-              iconName = focused ? 'log-out' : 'log-out-outline';
+              // iconName = focused ? 'log-out' : 'log-out-outline';
 
             }
-
             // You can return any component that you like here!
             return <Ionicons name={iconName} size={size} color={color} />;
           },
-        })}
-        tabBarOptions={{
-          activeTintColor: 'tomato',
-          inactiveTintColor: 'grey',
-          labelStyle: { paddingBottom: 10, fontSize: 10 },
-          style: { padding: 10, height: 70 }
-        }}>
+          tabBarActiveTintColor: 'tomato',
+          tabBarInactiveTintColor: 'gray',
+          tabBarLabelStyle: { paddingBottom: 10, fontSize: 13 },
+          tabBarStyle: { padding: 10, height: 70 }
+        })}>
 
         <Tab.Screen name={homeName} component={HomeScreen} options={{ headerShown: false }} />
         <Tab.Screen name={AboutName} component={AboutScreen} options={{ headerShown: false }} />
